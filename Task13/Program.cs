@@ -7,18 +7,18 @@
 Console.WriteLine("Введите число");
 int num = int.Parse(Console.ReadLine()!);
 
-while (num > 1000)
+while (num > 1000 | num < -999)
 {
     num = num / 10;
 }
 
-if (num < 1000 && num > 99)
+if (num < 1000 && num > 99 | num > -1000 && num < -99)
 {
     int a = num % 10;
     Console.WriteLine(a);
 }
 
-if (num < 100)
+if (num < 100 && num > -100)
 {
     Console.WriteLine("третьей цифры нет");
 }
